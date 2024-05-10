@@ -10,11 +10,11 @@ export default async function Froguins() {
       <h2>All Froguins</h2>
       {froguins.rows.map((froguin) => {
         return (
-          <Link href={`/froguins/${froguin.id}`} key={froguin.id}>
+          <Link href={`/froguins/id ${froguin.id}`} key={froguin.id}>
             <h3>{froguin.name}</h3>
             <p>{froguin.description}</p>
             <Image
-              src={`/${froguin.name}.png`}
+              src={`/froguins/id ${froguin.name}.png`}
               alt={froguin.name}
               width={300}
               height={300}
